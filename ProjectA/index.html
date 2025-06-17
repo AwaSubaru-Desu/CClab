@@ -1,0 +1,121 @@
+<!-- 
+Template for IMA's Creative Coding Lab 
+
+Project A: Generative Creatures
+CCLaboratories Biodiversity Atlas 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>[ Living Material ]</title>
+
+    <!-- allow special characters, including Arabic, Chinese, Korean, Japanese, etc. -->
+    <meta charset="UTF-8">
+    <!-- link the style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- import p5.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+
+    <!-- import p5.sound.js -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/addons/p5.sound.min.js"></script>
+
+    <script>
+        // prevent scrolling when spacebar and arrow keys are pressed.
+        window.addEventListener("keydown", function (e) { if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) { e.preventDefault(); } }, false);
+    </script>
+</head>
+
+<body>
+    <!-- title -->
+    <div id="title-wrapper">
+        <h1 class="headline black">[ Living Material ]</h1>
+    </div>
+
+    <!-- main content -->
+    <div id="main-wrapper">
+        <div id="p5-canvas-container">
+            <!-- This is where your p5 sketch will be appended and appear! -->
+        </div>
+        <div class="two-columns">
+            <div class="left">
+                <h3 class="red">Scientific Name:</h3>
+                <p>Living Material</p>
+
+                <h3 class="red">Discovered by / at:</h3>
+                <p>Dr Hindenberg, discovered on many places underground on earth at 2044</p>
+
+                <h3 class="green">Family:</h3>
+                <p>Belongs to the speculative class Synthetic Vitae and the family Geoformic Threads. Their emergence
+                    challenges the distinction between biology and architecture. There are still long way ahead of us to
+                    learn about them.
+                </p>
+            </div>
+            <div class="right">
+                <h3 class="green">Habitat:</h3>
+                <p>They thrive in geometrically open spaces with electromagnetic silence. Though invisible underground,
+                    their emergence can be triggered by intentional human actions — notably, the placement of attractant
+                    markers.
+                </p>
+
+                <h3 class="green">Appearance:</h3>
+                <p>Long, glimmering filaments that trace elaborate patterns across flat terrains. Their motion resembles
+                    growing blueprints. Each individual possesses a chromatic identity, tied to its ancestral “seed” —
+                    representing different evolutionary tribes.
+                </p>
+
+                <h3 class="green">Key Characteristics:</h3>
+                <ul>
+                    <li>Grows continuously unless encountering a dead zone(created by certain types of chemical matters,
+                        in this experiment I dyed them to be red).</li>
+                    <li>Communicates via spatial patterns, not sound(in this experiment you can see that they'll follow
+                        the guideline which appear as a green ciecle)</li>
+                    <li>Mutates color based on origin and environment.</li>
+                    <li>Appears to learn from proximity to other lines.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="one-column">
+            <p>
+                <span class="yellow">What we know so far about [ Living Materials ]?</span>
+                These living materials are not creature in the traditional sense. It is not cellular, yet it appears
+                to adapt, respond, and even “choose” paths. The lines do not just grow — they listen, subtly steering
+                toward “suggested” locations when guided by user-generated attractant zones.
+
+                Ancient myths from post-technological societies recall the "Builders Beneath" — entities that shaped
+                entire cities under the earth without tools or words. While speculative, some cultural archaeologists
+                suggest our line-based organism is a modern reappearance of this long-lost biomechanical ancestry.
+
+                Their exact origin remains unknown. Some theories propose they are a byproduct of urban stress, others
+                believe they are memory-encoded geological threads — relics of synthetic design thinking embedded in the
+                crust.
+                <br>
+                <span class="blue">Left-click to introduce new seeds. Each seed spawns a unique evolutionary tribe.
+
+                    Press A to place attractant zones. Lines will curve toward them, slowly forming patterns.
+
+                    Press D to place red “dead zones.” These zones halt line growth permanently.
+
+                    Right-click to remove zones (attractant or red).
+
+                    Observe their growth — the organism reveals its nature through form, not function.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="black">
+        <p>A CCLab project made by [Hanwen Hu] in [S25]</p>
+    </div>
+
+    <!-- Home: Link back to the ATLAS page-->
+    <div id="home">
+        <a href="https://cclab.work/atlas">Back to the ATLAS</a>
+    </div>
+
+    <!-- Include your sketch.js file here -->
+    <script src="sketch.js" type="text/javascript"> </script>
+</body>
+
+</html>
